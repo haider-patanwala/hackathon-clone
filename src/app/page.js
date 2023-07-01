@@ -1,3 +1,117 @@
-export default function Home() {
-	return <main>Hello World</main>;
-}
+import Container from '@/app/components/Container';
+import ListingCard from '@/app/components/listings/ListingCard';
+import ClientOnly from './components/ClientOnly';
+
+const Home = async ({ searchParams }) => {
+	return (
+		<ClientOnly>
+			<Container>
+				<div
+					className='
+            pt-48
+            grid 
+            grid-cols-1 
+            sm:grid-cols-2 
+            md:grid-cols-3 
+            lg:grid-cols-4
+            xl:grid-cols-5
+            2xl:grid-cols-6
+            gap-8
+          '
+				>
+					<ListingCard
+						imgSrc='/properties/l1.webp'
+						price='300'
+						locationRegion='Lonavala'
+						locationLabel='India'
+						actionLabel='Reserve'
+						reservationCategory='Resort'
+					/>
+
+					<ListingCard
+						imgSrc='/properties/l1.webp'
+						price='300'
+						locationRegion='Lonavala'
+						locationLabel='India'
+						actionLabel='Reserve'
+						reservationCategory='Resort'
+					/>
+					<ListingCard
+						imgSrc='/properties/l1.webp'
+						price='300'
+						locationRegion='Lonavala'
+						locationLabel='India'
+						actionLabel='Reserve'
+						reservationCategory='Resort'
+					/>
+					<ListingCard
+						imgSrc='/properties/l1.webp'
+						price='300'
+						locationRegion='Lonavala'
+						locationLabel='India'
+						actionLabel='Reserve'
+						reservationCategory='Resort'
+					/>
+					<ListingCard
+						imgSrc='/properties/l1.webp'
+						price='300'
+						locationRegion='Lonavala'
+						locationLabel='India'
+						actionLabel='Reserve'
+						reservationCategory='Resort'
+					/>
+					<ListingCard
+						imgSrc='/properties/l1.webp'
+						price='300'
+						locationRegion='Lonavala'
+						locationLabel='India'
+						actionLabel='Reserve'
+						reservationCategory='Resort'
+					/>
+					<ListingCard
+						imgSrc='/properties/l1.webp'
+						price='300'
+						locationRegion='Lonavala'
+						locationLabel='India'
+						actionLabel='Reserve'
+						reservationCategory='Resort'
+					/>
+					<ListingCard
+						imgSrc='/properties/l1.webp'
+						price='300'
+						locationRegion='Lonavala'
+						locationLabel='India'
+						actionLabel='Reserve'
+						reservationCategory='Resort'
+					/>
+					<ListingCard
+						imgSrc='/properties/l1.webp'
+						price='300'
+						locationRegion='Lonavala'
+						locationLabel='India'
+						actionLabel='Reserve'
+						reservationCategory='Resort'
+					/>
+					<ListingCard
+						imgSrc='/properties/l1.webp'
+						price='300'
+						locationRegion='Lonavala'
+						locationLabel='India'
+						actionLabel='Reserve'
+						reservationCategory='Resort'
+					/>
+					<ListingCard
+						imgSrc='/properties/l1.webp'
+						price='300'
+						locationRegion='Lonavala'
+						locationLabel='India'
+						actionLabel='Reserve'
+						reservationCategory='Resort'
+					/>
+				</div>
+			</Container>
+		</ClientOnly>
+	);
+};
+
+export default Home;
